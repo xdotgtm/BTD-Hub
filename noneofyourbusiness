@@ -1,1 +1,95 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
+OrionLib:MakeNotification({
+	Name = "BTD Hub V1 has Loaded",
+	Content = "BTD Hub V1 has successfully loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Window = OrionLib:MakeWindow({Name = "BTD Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "BTD Hub", IntroEnabled = true, IntroText = BTD Hub v1})
+
+local TSB = Window:MakeTab({
+	Name = "The Strongest Battlegrounds",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local ScriptHubs = TSB:AddSection({
+	Name = "Script Hubs"
+})
+
+TSB:AddButton({
+	Name = "cheate",
+	Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Hub/Load.lua", true))()
+  	end    
+})
+
+TSB:AddButton({
+	Name = "Legend Handles",
+	Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/Saitama111/main/battle121"))()
+  	end    
+})
+
+local Movesets = TSB:AddSection({
+	Name = "Movesets"
+})
+
+TSB:AddButton({
+	Name = "Mixed Movesets",
+	Callback = function()
+            loadstring(game:HttpGet("https://pastebin.com/g7TkRqan"))()
+  	end    
+})
+
+local FF = Window:MakeTab({
+	Name = "Funky Friday",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Autoplay = FF:AddSection({
+	Name = "Autoplay"
+})
+
+FF:AddButton({
+	Name = "Autoplay for Wave",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/RandomScript/main/FunkyFridayMobile"))()
+  	end    
+})
+
+FF:AddButton({
+	Name = "Wally RBLX Autoplayer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Bart3kk/funky-friday-autoplay/main/script.lua"))()
+  	end    
+})
+
+local Misc = Window:MakeTab({
+	Name = "Misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Msc = Misc:AddSection({
+	Name = "Misc"
+})
+
+Misc:AddButton({
+	Name = "Destroy GUI",
+	Callback = function()
+      		orionlib:Destroy()
+  	end    
+})
+
+local Version = Misc:AddSection({
+	Name = "Version"
+})
+
+tab:AddLabel("BTD Hub V1")
+
+
+orionlib:Init()
